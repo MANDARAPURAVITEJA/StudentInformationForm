@@ -6,7 +6,8 @@ import os
 import pymysql
 import SQL_Operations as sql_obj
 
-app = Flask(__name__)
+# app = Flask(__name__)
+app = Flask(__name__, static_folder='static', template_folder='templates')
 
 # @app.route('/',methods=['GET'])  # route to display the home page
 # @cross_origin()
